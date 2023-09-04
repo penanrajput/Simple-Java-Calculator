@@ -448,23 +448,23 @@ public class CalculatorUI {
         });
         btnEqual.setSize(2 * BUTTON_WIDTH + 10, BUTTON_HEIGHT);
 
-        btnRoot = createButton("√", columns[4], rows[1]);
-        btnRoot.addActionListener(event -> {
-            if (!Pattern.matches(DOUBLE_OR_NUMBER_REGEX, inputScreen.getText()))
-                return;
+        // btnRoot = createButton("√", columns[4], rows[1]);
+        // btnRoot.addActionListener(event -> {
+        //     if (!Pattern.matches(DOUBLE_OR_NUMBER_REGEX, inputScreen.getText()))
+        //         return;
 
-            if (go) {
-                typedValue = Math.sqrt(Double.parseDouble(inputScreen.getText()));
-                if (Pattern.matches("[-]?[\\d]+[.][0]*", String.valueOf(typedValue))) {
-                    inputScreen.setText(String.valueOf((int) typedValue));
-                } else {
-                    inputScreen.setText(String.valueOf(typedValue));
-                }
-                selectedOperator = '√';
-                addToDisplay = false;
-            }
-        });
-        btnRoot.setVisible(false);
+        //     if (go) {
+        //         typedValue = Math.sqrt(Double.parseDouble(inputScreen.getText()));
+        //         if (Pattern.matches("[-]?[\\d]+[.][0]*", String.valueOf(typedValue))) {
+        //             inputScreen.setText(String.valueOf((int) typedValue));
+        //         } else {
+        //             inputScreen.setText(String.valueOf(typedValue));
+        //         }
+        //         selectedOperator = '√';
+        //         addToDisplay = false;
+        //     }
+        // });
+        // btnRoot.setVisible(false);
 
         btnPower = createButton("pow", columns[4], rows[2]);
         btnPower.addActionListener(event -> {

@@ -43,7 +43,7 @@
                             <addClasspath>true</addClasspath>
                             <!-- here we specify that we want to use the main method within the App
                             class -->
-                            <mainClass>com.houarizegai.calculator.App.main</mainClass>
+                            <mainClass>com.houarizegai.calculator.App</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

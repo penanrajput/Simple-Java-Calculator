@@ -134,13 +134,13 @@ public class CalculatorUI {
             switch (selectedItem) {
                 case "Standard":
                     window.setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
-                    btnRoot.setVisible(false);
+                    // btnRoot.setVisible(false);
                     btnPower.setVisible(false);
                     btnLog.setVisible(false);
                     break;
                 case "Scientific":
                     window.setSize(WINDOW_WIDTH + 80, WINDOW_HEIGHT);
-                    btnRoot.setVisible(true);
+                    // btnRoot.setVisible(true);
                     btnPower.setVisible(true);
                     btnLog.setVisible(true);
                     break;
@@ -552,7 +552,7 @@ public class CalculatorUI {
         btnMul.setForeground(hex2Color(theme.getTextColor()));
         btnSub.setForeground(hex2Color(theme.getTextColor()));
         btnAdd.setForeground(hex2Color(theme.getTextColor()));
-        btnRoot.setForeground(hex2Color(theme.getTextColor()));
+        // btnRoot.setForeground(hex2Color(theme.getTextColor()));
         btnLog.setForeground(hex2Color(theme.getTextColor()));
         btnPower.setForeground(hex2Color(theme.getTextColor()));
         btnEqual.setForeground(hex2Color(theme.getBtnEqualTextColor()));
@@ -578,7 +578,7 @@ public class CalculatorUI {
         btnMul.setBackground(hex2Color(theme.getOperatorBackground()));
         btnSub.setBackground(hex2Color(theme.getOperatorBackground()));
         btnAdd.setBackground(hex2Color(theme.getOperatorBackground()));
-        btnRoot.setBackground(hex2Color(theme.getOperatorBackground()));
+        // btnRoot.setBackground(hex2Color(theme.getOperatorBackground()));
         btnLog.setBackground(hex2Color(theme.getOperatorBackground()));
         btnPower.setBackground(hex2Color(theme.getOperatorBackground()));
         btnEqual.setBackground(hex2Color(theme.getBtnEqualBackground()));
